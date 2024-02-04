@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>carousel</title>
+
+<link href="style_3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<div class="navHeader">
+	
+	</div>
+
+		<div class="cenCon">
+
+			<div class="sec1">
+				
+				<!-- envelopeCon1 - envelope back outer div start -->
+				<div class="envelopeCon1">
+					
+				</div>
+				<!-- envelopeCon1 - envelope back outer div end -->
+				
+				<!-- fixedEmail HOLD SCROLL DIV IN PLACE - start -->	
+				<div class="fixedEmail">
+
+					<!-- scrollDIVEmail start - contains newsletter -->
+					<div id="scrollDIVEmail" style="width: 100%;">
+
+						<!-- contentEmail div start - contains inline email -->
+						<div id="contentEmail">
+							
+						</div>	
+						<!-- contentEmail div end -->				
+
+					</div>
+					<!-- scrollDIVEmail end - contains newsletter -->
+
+				</div>
+				<!-- "fixedEmail" end -->
+
+			</div>
+
+			<div class="sec2">
+
+			</div>
+
+			<div class="sec3">
+
+			</div>
+
+		</div>
+	
+	<div class="navFooter">
+	
+	</div>
+	
+<script>//email script
+	
+const element = document.getElementById("scrollDIVEmail");
+let y = element.scrollHeight;
+let x = element.scrollWidth;
+document.getElementById ("contentEmail").innerHTML = "Height: " + y + " Width: " + x;
+
+let x = element.scrollHeight;
+let y = element.scrollWidth;
+document.getElementById ("contentEmail").innerHTML = "Height: " + x + " Width: " + y;	
+	
+</script>
+
+</body>
+</html>
